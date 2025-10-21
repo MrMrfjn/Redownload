@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Мотивация и окружение — твой главный актив | Перезагрузка</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- SEO -->
+  <meta name="description" content="Мотивация и окружение — ключевые факторы успеха. Узнай, как выстроить среду роста и вдохновения вместе с проектом «Перезагрузка».">
+  <meta property="og:title" content="Мотивация и окружение — твой главный актив | Перезагрузка">
+  <meta property="og:description" content="Проект «Перезагрузка» — обучение, сообщество, системность и развитие для сетевиков и предпринимателей.">
+  <meta property="og:image" content="assets/preview.jpg">
+  <link rel="icon" href="assets/favicon.png">
+  <meta name="theme-color" content="#D4AF37">
 
   <style>
     :root{
-      --bg:#ffffff;
-      --text:#0d0d0d;
-      --muted:#6b6b6b;
+      --bg:#0E0E0E;
+      --text:#FFFFFF;
+      --muted:#CCCCCC;
       --accent:#D4AF37;
-      --beige:#F6F0E6;
       --container:1000px;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family:"Roboto",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial;
+      font-family:"Inter",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial;
       color:var(--text);
       background:var(--bg);
     }
@@ -27,14 +35,93 @@
       max-width:var(--container);
       margin:32px auto;
       padding:36px;
-      background:linear-gradient(180deg,#fff,#fbfaf8);
-      border-radius:12px;
-      box-shadow:0 10px 30px rgba(6,6,6,0.06);
+      background:rgba(255,255,255,0.02);
+      border-radius:16px;
+      box-shadow:0 0 30px rgba(212,175,55,0.08);
     }
-    /* HERO */
     .hero{
       display:flex;gap:28px;align-items:center;
-      background:linear-gradient(90deg,rgba(212,175,55,0.06),rgba(250,246,242,0.02));
-      padding:24px;border-radius:10px;
+      background:linear-gradient(90deg,rgba(212,175,55,0.1),rgba(14,14,14,0.4));
+      padding:24px;border-radius:16px;
     }
-    .log
+    .logo{flex:0 0 110px}
+    .logo img{width:110px;height:110px;object-fit:contain}
+    .hero h1{font-family:"Montserrat";font-size:30px;margin:0;color:var(--accent)}
+    .hero p{margin:8px 0 0;color:var(--muted);line-height:1.5}
+    .pill{background:rgba(212,175,55,0.1);padding:8px 12px;border-radius:999px;font-size:13px;border:1px solid rgba(212,175,55,0.25);margin-right:6px;display:inline-block;color:var(--accent)}
+    section{margin-top:28px;padding:24px;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid rgba(212,175,55,0.12)}
+    h2{font-family:"Montserrat";margin:0 0 12px 0;font-size:22px;color:var(--accent)}
+    p{margin:0 0 12px 0;line-height:1.7;color:var(--muted)}
+    ul,ol{padding-left:20px;color:var(--muted);line-height:1.7}
+    .quote{padding:14px 18px;border-left:4px solid var(--accent);background:rgba(255,255,255,0.04);border-radius:6px;color:#f5f5f5;font-style:italic}
+    .btn{display:inline-block;text-decoration:none;font-family:"Montserrat";padding:12px 18px;border-radius:8px;font-weight:600;margin-right:10px;transition:0.25s ease}
+    .btn.primary{background:var(--accent);color:#111;box-shadow:0 8px 24px rgba(212,175,55,0.3)}
+    .btn.primary:hover{box-shadow:0 0 30px rgba(212,175,55,0.6);transform:translateY(-2px)}
+    .btn.ghost{border:1px solid rgba(255,255,255,0.1);color:var(--text)}
+    .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+    footer{margin-top:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:13px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.08)}
+    @media(max-width:640px){.hero{flex-direction:column;align-items:flex-start}.logo img{width:88px;height:88px}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="logo"><img src="assets/logo.png" alt="Перезагрузка логотип"></div>
+    <div>
+      <h1>Мотивация и окружение — твой главный актив</h1>
+      <p>Среда формирует скорость твоего роста. Настоящая мотивация рождается не из слов, а из действий людей вокруг. Создай окружение, где энергия и результаты становятся нормой.</p>
+      <div>
+        <span class="pill">Тема: Личностный рост</span>
+        <span class="pill">Формат: Лендинг • Премиум</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Введение -->
+  <section>
+    <h2>Почему мотивация быстро заканчивается</h2>
+    <p>Большинство людей ищут вдохновение вовне, но мотивация не работает без среды, где привычно действовать. Без правильного окружения даже сильная цель угасает. Энергия команды задаёт темп всему бизнесу.</p>
+    <div class="quote">«Ты становишься тем, с кем чаще всего общаешься»</div>
+  </section>
+
+  <!-- Сила окружения -->
+  <section>
+    <h2>Сила окружения</h2>
+    <ul>
+      <li><strong>Поддержка.</strong> Когда рядом те, кто идёт вперёд, ты не можешь стоять на месте.</li>
+      <li><strong>Энергия действий.</strong> Успех — это привычка видеть и делать больше, чем вчера.</li>
+      <li><strong>Фокус на росте.</strong> Настоящее окружение не жалуется, а ищет решения.</li>
+      <li><strong>Нормальность успеха.</strong> Победы перестают быть исключением и становятся стандартом.</li>
+    </ul>
+  </section>
+
+  <!-- Как построить среду -->
+  <section>
+    <h2>Как создать правильное окружение</h2>
+    <ol>
+      <li><strong>Отсеивай шум.</strong> Минимизируй общение с теми, кто тянет вниз.</li>
+      <li><strong>Выбирай окружение по ценностям.</strong> Важно не количество, а качество людей рядом.</li>
+      <li><strong>Будь примером.</strong> Стань источником вдохновения, а не потребителем.</li>
+    </ol>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <h2>Создай среду, где рост — это норма</h2>
+    <p>В проекте «Перезагрузка» ты попадёшь в сообщество лидеров, где системность, поддержка и развитие становятся твоим новым стандартом.</p>
+    <div>
+      <a href="https://t.me/redownloud_bot" class="btn primary" target="_blank" rel="noreferrer">Перейти в Telegram-бот</a>
+      <a href="#" class="btn ghost" onclick="window.print();return false;">Сохранить в PDF</a>
+    </div>
+  </section>
+
+  <footer>
+    <div><img src="assets/logo.png" alt="Перезагрузка" style="height:26px;vertical-align:middle;margin-right:6px"> Проект «Перезагрузка»</div>
+    <div>© Все права защищены</div>
+  </footer>
+
+</div>
+</body>
+</html>
