@@ -4,81 +4,148 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Наставничество и дубликация | Перезагрузка</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Наставничество, которое создаёт дубликацию. Узнай, как построить команду, способную расти без твоего постоянного контроля. Проект Перезагрузка.">
+  <meta property="og:title" content="Наставничество и дубликация | Перезагрузка">
+  <meta property="og:description" content="Стань наставником, которого дублируют не по словам, а по действиям.">
+  <meta property="og:image" content="assets/preview.jpg">
+  <meta name="theme-color" content="#D4AF37">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg:#ffffff;
-      --text:#0d0d0d;
-      --muted:#6b6b6b;
+      --bg:#0d0d0d;
+      --text:#f8f8f8;
+      --muted:#b3b3b3;
       --accent:#D4AF37;
-      --beige:#F6F0E6;
+      --beige:#1a1a1a;
       --container:1000px;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family:"Roboto",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial;
+      font-family:"Inter",system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial;
       color:var(--text);
       background:var(--bg);
+      line-height:1.6;
     }
     .wrap{
       max-width:var(--container);
-      margin:32px auto;
-      padding:36px;
-      background:linear-gradient(180deg,#fff,#fbfaf8);
-      border-radius:12px;
-      box-shadow:0 10px 30px rgba(6,6,6,0.06);
+      margin:40px auto;
+      padding:40px 28px;
+      background:linear-gradient(180deg,#111,#181818);
+      border-radius:16px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.4);
+      border:1px solid rgba(255,255,255,0.05);
     }
     /* HERO */
     .hero{
       display:flex;gap:28px;align-items:center;
-      background:linear-gradient(90deg,rgba(212,175,55,0.06),rgba(250,246,242,0.02));
-      padding:24px;border-radius:10px;
+      background:linear-gradient(90deg,rgba(212,175,55,0.1),rgba(255,255,255,0.02));
+      padding:28px;border-radius:14px;
     }
     .logo{flex:0 0 110px}
-    .logo img{width:110px;height:110px;object-fit:contain}
-    .hero h1{font-family:"Montserrat";font-size:30px;margin:0}
-    .hero p{margin:8px 0 0;color:var(--muted)}
-    .pill{background:var(--beige);padding:8px 12px;border-radius:999px;font-size:13px;border:1px solid rgba(212,175,55,0.08);margin-right:6px;display:inline-block}
-    section{margin-top:24px;padding:20px;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04);border:1px solid rgba(0,0,0,0.03)}
-    h2{font-family:"Montserrat";margin:0 0 12px 0;font-size:20px}
-    p{margin:0 0 12px 0;line-height:1.6;color:var(--muted)}
-    ul{padding-left:18px;color:var(--muted)}
-    .quote{padding:14px;border-left:4px solid var(--accent);background:#fff9ec;border-radius:6px;color:#3a3a3a}
-    .btn{display:inline-block;text-decoration:none;font-family:"Montserrat";padding:12px 18px;border-radius:8px;font-weight:600;margin-right:10px}
-    .btn.primary{background:var(--accent);color:#111;box-shadow:0 8px 24px rgba(212,175,55,0.16)}
-    .btn.ghost{border:1px solid rgba(0,0,0,0.06);color:var(--text)}
-    .small{font-size:13px;color:var(--muted)}
-    footer{margin-top:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:13px}
-    @media(max-width:640px){.hero{flex-direction:column;align-items:flex-start}.logo img{width:88px;height:88px}}
+    .logo img{width:110px;height:110px;object-fit:contain;filter:drop-shadow(0 0 6px rgba(212,175,55,0.3))}
+    .hero h1{font-family:"Montserrat";font-size:32px;margin:0;color:var(--accent);letter-spacing:-0.5px}
+    .hero p{margin:10px 0 0;color:var(--muted);max-width:600px}
+    .pill{
+      background:rgba(212,175,55,0.1);
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:13px;
+      border:1px solid rgba(212,175,55,0.2);
+      margin-right:8px;
+      color:var(--accent);
+      display:inline-block;
+    }
+    section{
+      margin-top:30px;
+      padding:28px;
+      background:#121212;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.05);
+      box-shadow:0 4px 14px rgba(0,0,0,0.3);
+    }
+    h2{
+      font-family:"Montserrat";
+      margin:0 0 14px 0;
+      font-size:22px;
+      color:var(--accent);
+      letter-spacing:-0.3px;
+    }
+    p{margin:0 0 12px 0;color:var(--muted)}
+    ul,ol{padding-left:18px;color:var(--muted);margin:0 0 0.5em 0}
+    .quote{
+      padding:16px 20px;
+      border-left:4px solid var(--accent);
+      background:rgba(212,175,55,0.05);
+      border-radius:8px;
+      color:#f5f5f5;
+      font-style:italic;
+    }
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      font-family:"Montserrat";
+      padding:14px 22px;
+      border-radius:10px;
+      font-weight:600;
+      margin-right:10px;
+      transition:all 0.25s ease;
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#111;
+      box-shadow:0 8px 24px rgba(212,175,55,0.25);
+    }
+    .btn.primary:hover{background:#e1c25c;transform:translateY(-2px)}
+    .btn.ghost{
+      border:1px solid rgba(255,255,255,0.1);
+      color:var(--text);
+      background:rgba(255,255,255,0.04);
+    }
+    .btn.ghost:hover{background:rgba(255,255,255,0.1)}
+    footer{
+      margin-top:34px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:13px;
+      border-top:1px solid rgba(255,255,255,0.08);
+      padding-top:20px;
+    }
+    footer a{color:var(--accent);text-decoration:none}
+    footer a:hover{text-decoration:underline}
+    @media(max-width:640px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .logo img{width:90px;height:90px}
+      h1{font-size:26px}
+    }
   </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- HERO -->
   <div class="hero">
-    <div class="logo"><img src="logo.png" alt="Перезагрузка логотип"></div>
+    <div class="logo"><img src="assets/logo.png" alt="Перезагрузка логотип"></div>
     <div>
       <h1>Наставничество и дубликация</h1>
       <p>Как передавать опыт, чтобы команда росла без твоего постоянного контроля. От проекта «Перезагрузка».</p>
       <div>
-        <span class="pill">Тема: Лидерство и дубликация</span>
-        <span class="pill">Формат: Лендинг • Премиум</span>
+        <span class="pill">Лидерство и дубликация</span>
+        <span class="pill">Премиум контент</span>
       </div>
     </div>
   </div>
 
-  <!-- Введение -->
   <section>
     <h2>Почему наставничество решает всё</h2>
     <p>Наставничество — это не обучение, а дубликация мышления. Лидер, который системно передаёт шаги, создаёт сильную структуру, а не просто вдохновлённую толпу. Без дубликации бизнес зависает на «ручном управлении» и выгорании лидеров.</p>
     <div class="quote">«Лидер не тот, кто делает лучше всех, а тот, кто делает других лучше»</div>
   </section>
 
-  <!-- Как работает дубликация -->
   <section>
     <h2>Как работает дубликация</h2>
     <ul>
@@ -89,7 +156,6 @@
     </ul>
   </section>
 
-  <!-- 3 принципа -->
   <section>
     <h2>3 принципа наставничества, которое масштабируется</h2>
     <ol>
@@ -99,7 +165,6 @@
     </ol>
   </section>
 
-  <!-- Ошибки -->
   <section>
     <h2>Ошибки наставников</h2>
     <ul>
@@ -110,19 +175,18 @@
     <p>Настоящее наставничество создаёт дубликацию, даже когда лидера нет онлайн.</p>
   </section>
 
-  <!-- CTA -->
   <section>
     <h2>Построй свою систему наставничества</h2>
     <p>Пройди диагностику в Telegram-боте, узнай, как внедрить дубликацию в команду и стать наставником, которого копируют не по словам, а по действиям.</p>
     <div>
-      <a href="https://t.me/perezagruzka_bot" class="btn primary" target="_blank" rel="noreferrer">Перейти в Telegram-бот</a>
+      <a href="https://t.me/redownloud_bot" class="btn primary" target="_blank" rel="noopener">Перейти в Telegram-бот</a>
       <a href="#" class="btn ghost" onclick="window.print();return false;">Сохранить в PDF</a>
     </div>
   </section>
 
   <footer>
-    <div>Подпись: <strong>Проект «Перезагрузка»</strong></div>
-    <div>© Все права защищены</div>
+    <div>© Проект «Перезагрузка». Все права защищены.</div>
+    <div><a href="https://t.me/redownloud_bot" target="_blank" rel="noopener">@redownloud_bot</a></div>
   </footer>
 
 </div>
