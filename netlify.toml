@@ -1,0 +1,3 @@
+[build]
+  publish = "perezagruzka-site"
+  command = "echo 'Static site - no build required'"
